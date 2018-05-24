@@ -37,3 +37,68 @@ a {
   margin: -1px;
   overflow: hidden;
 }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header */
+.main-header {
+  background-color: #fcdb00;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 52px;
+  padding-bottom: 15px;
+}
+
+  .main-logo {
+    position: relative;
+
+    padding-left: 60px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+  }
+
+  .main-logo::before {
+    position: absolute;
+    left: 0;
+
+    content: '';
+    width: 43px;
+    height: 43px;
+
+    background: 0 0 url('../img/logo-fingerprint.png') no-repeat;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 22px;
+    line-height: 28px;
+
+    list-style: none;
+  }
+
+    .site-nav li:not(:last-child) {
+      margin-right: 70px;
+    }
+
+    .site-nav a {
+      display: inline-block;
+      padding: 9px 0 6px;
+
+      font-family: 'Helvetica Neue';
+      font-weight: bold;
+      color: #010101;
+    }
